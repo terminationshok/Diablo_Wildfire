@@ -41,5 +41,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         mMap.addMarker(MarkerOptions().position(sacramento).title("Center on California"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sacramento))
+        mMap.moveCamera(CameraUpdateFactory.zoomTo(5.0.toFloat()))
     }
 }
