@@ -38,6 +38,11 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         // Add a marker in Sacramento and move the camera
         //val sydney = LatLng(-34.0, 151.0)
         val sacramento = LatLng(38.5616501,-121.5833428)
+        val augustcf = LatLng(40.249134,-123.294563)
+        val creekf = LatLng(37.353180,-119.201202)
+
+        mMap.addMarker(MarkerOptions().position(augustcf).title("August Complex Fire"))
+        mMap.addMarker(MarkerOptions().position(creekf).title("Creek Fire"))
 
         mMap.addMarker(MarkerOptions().position(sacramento).title("Center on California"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sacramento))
